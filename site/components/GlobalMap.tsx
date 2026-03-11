@@ -8,44 +8,33 @@ const MAP_WIDTH = 1536;
 const MAP_HEIGHT = 1024;
 
 const cities = {
-  // North America
-  newYork: { x: 310, y: 285, name: 'New York' },
-  miami: { x: 330, y: 400, name: 'Miami' },
-  losAngeles: { x: 210, y: 340, name: 'Los Angeles' },
-  seattle: { x: 190, y: 265, name: 'Seattle' },
-  sanFrancisco: { x: 200, y: 320, name: 'San Francisco' },
-
-  // South America
-  fortaleza: { x: 440, y: 510, name: 'Fortaleza' },
-  valparaiso: { x: 350, y: 630, name: 'Valparaiso' },
-  saoPaulo: { x: 450, y: 590, name: 'São Paulo' },
-
-  // Europe
-  london: { x: 735, y: 270, name: 'London' },
-  lisbon: { x: 700, y: 340, name: 'Lisbon' },
-  marseille: { x: 760, y: 320, name: 'Marseille' },
-  madrid: { x: 720, y: 340, name: 'Madrid' },
-  paris: { x: 750, y: 295, name: 'Paris' },
-  berlin: { x: 805, y: 280, name: 'Berlin' },
-
-  // Africa
-  lagos: { x: 745, y: 495, name: 'Lagos' },
-  capeTown: { x: 790, y: 730, name: 'Cape Town' },
-  johannesburg: { x: 840, y: 700, name: 'Johannesburg' },
-
-  // Asia
-  mumbai: { x: 1040, y: 440, name: 'Mumbai' },
-  singapore: { x: 1170, y: 535, name: 'Singapore' },
-  tokyo: { x: 1320, y: 325, name: 'Tokyo' },
-  hongKong: { x: 1270, y: 420, name: 'Hong Kong' },
-  shanghai: { x: 1300, y: 365, name: 'Shanghai' },
-  beijing: { x: 1280, y: 305, name: 'Beijing' },
-  dubai: { x: 1000, y: 405, name: 'Dubai' },
-
-  // Oceania
-  sydney: { x: 1360, y: 735, name: 'Sydney' },
-  auckland: { x: 1480, y: 795, name: 'Auckland' },
-  melbourne: { x: 1320, y: 780, name: 'Melbourne' },
+  losAngeles: { x: 264, y: 412, name: 'Los Angeles' },
+  newYork: { x: 465, y: 348, name: 'New York' },
+  miami: { x: 249, y: 350, name: 'Miami' },
+  seattle: { x: 185, y: 285, name: 'Seattle' },
+  sanFrancisco: { x: 247, y: 380, name: 'San Francisco' },
+  fortaleza: { x: 573, y: 576, name: 'Fortaleza' },
+  valparaiso: { x: 447, y: 702, name: 'Valparaiso' },
+  saoPaulo: { x: 548, y: 661, name: 'São Paulo' },
+  london: { x: 726, y: 322, name: 'London' },
+  lisbon: { x: 692, y: 382, name: 'Lisbon' },
+  marseille: { x: 750, y: 365, name: 'Marseille' },
+  madrid: { x: 713, y: 382, name: 'Madrid' },
+  paris: { x: 733, y: 339, name: 'Paris' },
+  berlin: { x: 775, y: 315, name: 'Berlin' },
+  lagos: { x: 747, y: 534, name: 'Lagos' },
+  capeTown: { x: 804, y: 698, name: 'Cape Town' },
+  johannesburg: { x: 846, y: 660, name: 'Johannesburg' },
+  mumbai: { x: 1029, y: 476, name: 'Mumbai' },
+  singapore: { x: 1158, y: 553, name: 'Singapore' },
+  tokyo: { x: 1297, y: 396, name: 'Tokyo' },
+  hongKong: { x: 1204, y: 462, name: 'Hong Kong' },
+  shanghai: { x: 1232, y: 433, name: 'Shanghai' },
+  beijing: { x: 1168, y: 475, name: 'Beijing' },
+  dubai: { x: 952, y: 454, name: 'Dubai' },
+  sydney: { x: 1340, y: 702, name: 'Sydney' },
+  auckland: { x: 1442, y: 724, name: 'Auckland' },
+  melbourne: { x: 1318, y: 729, name: 'Melbourne' },
 };
 
 // Generate smooth SVG path between two points using cubic bezier
@@ -72,8 +61,8 @@ const cables = [
     year: 2024,
     region: 'North Atlantic',
     path: createCablePath(cities.newYork, cities.london, {
-      cp1: { x: 450, y: 240 },
-      cp2: { x: 600, y: 235 }
+      cp1: { x: 595, y: 300 },
+      cp2: { x: 650, y: 280 }
     }),
     description: 'New York to London via North Atlantic'
   },
@@ -86,8 +75,8 @@ const cables = [
     year: 2023,
     region: 'Central Atlantic',
     path: createCablePath(cities.miami, cities.lisbon, {
-      cp1: { x: 450, y: 360 },
-      cp2: { x: 580, y: 335 }
+      cp1: { x: 470, y: 340 },
+      cp2: { x: 580, y: 340 }
     }),
     description: 'Miami to Lisbon via Central Atlantic'
   },
@@ -100,8 +89,8 @@ const cables = [
     year: 2023,
     region: 'South Atlantic',
     path: createCablePath(cities.fortaleza, cities.lagos, {
-      cp1: { x: 520, y: 490 },
-      cp2: { x: 640, y: 475 }
+      cp1: { x: 660, y: 550 },
+      cp2: { x: 700, y: 520 }
     }),
     description: 'Brazil to Nigeria via South Atlantic'
   },
@@ -114,7 +103,7 @@ const cables = [
     year: 2024,
     region: 'Atlantic Ocean',
     path: createCablePath(cities.capeTown, cities.london, {
-      cp1: { x: 700, y: 650 },
+      cp1: { x: 765, y: 600 },
       cp2: { x: 750, y: 450 }
     }),
     description: 'Cape Town to London via West Africa'
@@ -130,8 +119,8 @@ const cables = [
     year: 2025,
     region: 'North Pacific',
     path: createCablePath(cities.seattle, cities.tokyo, {
-      cp1: { x: 500, y: 220 },
-      cp2: { x: 950, y: 250 }
+      cp1: { x: 600, y: 250 },
+      cp2: { x: 950, y: 300 }
     }),
     description: 'Seattle to Tokyo via North Pacific'
   },
@@ -144,8 +133,8 @@ const cables = [
     year: 2024,
     region: 'Pacific Ocean',
     path: createCablePath(cities.losAngeles, cities.tokyo, {
-      cp1: { x: 550, y: 340 },
-      cp2: { x: 950, y: 320 }
+      cp1: { x: 600, y: 380 },
+      cp2: { x: 950, y: 350 }
     }),
     description: 'Los Angeles to Tokyo via Hawaii'
   },
@@ -158,8 +147,8 @@ const cables = [
     year: 2024,
     region: 'South Pacific',
     path: createCablePath(cities.losAngeles, cities.sydney, {
-      cp1: { x: 500, y: 550 },
-      cp2: { x: 1000, y: 650 }
+      cp1: { x: 550, y: 600 },
+      cp2: { x: 1000, y: 680 }
     }),
     description: 'Los Angeles to Sydney via South Pacific'
   },
@@ -172,8 +161,8 @@ const cables = [
     year: 2023,
     region: 'Pacific Ocean',
     path: createCablePath(cities.losAngeles, cities.valparaiso, {
-      cp1: { x: 250, y: 450 },
-      cp2: { x: 290, y: 550 }
+      cp1: { x: 300, y: 500 },
+      cp2: { x: 350, y: 600 }
     }),
     description: 'Los Angeles to Valparaiso via Pacific coast'
   },
@@ -188,8 +177,8 @@ const cables = [
     year: 2024,
     region: 'Indian Ocean',
     path: createCablePath(cities.mumbai, cities.singapore, {
-      cp1: { x: 1080, y: 440 },
-      cp2: { x: 1120, y: 480 }
+      cp1: { x: 1080, y: 490 },
+      cp2: { x: 1120, y: 520 }
     }),
     description: 'Mumbai to Singapore via Bay of Bengal'
   },
@@ -202,8 +191,8 @@ const cables = [
     year: 2023,
     region: 'Indian Ocean',
     path: createCablePath(cities.capeTown, cities.mumbai, {
-      cp1: { x: 950, y: 600 },
-      cp2: { x: 1000, y: 480 }
+      cp1: { x: 920, y: 580 },
+      cp2: { x: 960, y: 520 }
     }),
     description: 'Cape Town to Mumbai via Indian Ocean'
   },
@@ -218,8 +207,8 @@ const cables = [
     year: 2025,
     region: 'Asia Pacific',
     path: createCablePath(cities.tokyo, cities.singapore, {
-      cp1: { x: 1300, y: 380 },
-      cp2: { x: 1220, y: 450 }
+      cp1: { x: 1280, y: 420 },
+      cp2: { x: 1220, y: 480 }
     }),
     description: 'Tokyo to Singapore via Hong Kong'
   },
@@ -232,8 +221,8 @@ const cables = [
     year: 2024,
     region: 'Indian Ocean',
     path: createCablePath(cities.singapore, cities.capeTown, {
-      cp1: { x: 1200, y: 580 },
-      cp2: { x: 980, y: 650 }
+      cp1: { x: 1150, y: 600 },
+      cp2: { x: 960, y: 680 }
     }),
     description: 'Singapore to Cape Town via Indian Ocean'
   },
