@@ -9,43 +9,43 @@ const MAP_HEIGHT = 1024;
 
 const cities = {
   // North America
-  newYork: { x: 295, y: 265, name: 'New York' },
-  miami: { x: 315, y: 380, name: 'Miami' },
-  losAngeles: { x: 175, y: 310, name: 'Los Angeles' },
-  seattle: { x: 155, y: 235, name: 'Seattle' },
-  sanFrancisco: { x: 168, y: 290, name: 'San Francisco' },
-  
+  newYork: { x: 310, y: 285, name: 'New York' },
+  miami: { x: 330, y: 400, name: 'Miami' },
+  losAngeles: { x: 210, y: 340, name: 'Los Angeles' },
+  seattle: { x: 190, y: 265, name: 'Seattle' },
+  sanFrancisco: { x: 200, y: 320, name: 'San Francisco' },
+
   // South America
-  fortaleza: { x: 420, y: 485, name: 'Fortaleza' },
-  valparaiso: { x: 310, y: 635, name: 'Valparaiso' },
-  saoPaulo: { x: 430, y: 590, name: 'São Paulo' },
-  
+  fortaleza: { x: 440, y: 510, name: 'Fortaleza' },
+  valparaiso: { x: 350, y: 630, name: 'Valparaiso' },
+  saoPaulo: { x: 450, y: 590, name: 'São Paulo' },
+
   // Europe
-  london: { x: 730, y: 245, name: 'London' },
-  lisbon: { x: 685, y: 315, name: 'Lisbon' },
-  marseille: { x: 745, y: 295, name: 'Marseille' },
-  madrid: { x: 705, y: 315, name: 'Madrid' },
-  paris: { x: 735, y: 270, name: 'Paris' },
-  berlin: { x: 785, y: 255, name: 'Berlin' },
-  
+  london: { x: 735, y: 270, name: 'London' },
+  lisbon: { x: 700, y: 340, name: 'Lisbon' },
+  marseille: { x: 760, y: 320, name: 'Marseille' },
+  madrid: { x: 720, y: 340, name: 'Madrid' },
+  paris: { x: 750, y: 295, name: 'Paris' },
+  berlin: { x: 805, y: 280, name: 'Berlin' },
+
   // Africa
-  lagos: { x: 725, y: 465, name: 'Lagos' },
-  capeTown: { x: 780, y: 705, name: 'Cape Town' },
-  johannesburg: { x: 820, y: 670, name: 'Johannesburg' },
-  
+  lagos: { x: 745, y: 495, name: 'Lagos' },
+  capeTown: { x: 790, y: 730, name: 'Cape Town' },
+  johannesburg: { x: 840, y: 700, name: 'Johannesburg' },
+
   // Asia
-  mumbai: { x: 1020, y: 410, name: 'Mumbai' },
-  singapore: { x: 1150, y: 505, name: 'Singapore' },
-  tokyo: { x: 1340, y: 295, name: 'Tokyo' },
-  hongKong: { x: 1250, y: 390, name: 'Hong Kong' },
-  shanghai: { x: 1280, y: 335, name: 'Shanghai' },
-  beijing: { x: 1260, y: 275, name: 'Beijing' },
-  dubai: { x: 980, y: 375, name: 'Dubai' },
-  
+  mumbai: { x: 1040, y: 440, name: 'Mumbai' },
+  singapore: { x: 1170, y: 535, name: 'Singapore' },
+  tokyo: { x: 1320, y: 325, name: 'Tokyo' },
+  hongKong: { x: 1270, y: 420, name: 'Hong Kong' },
+  shanghai: { x: 1300, y: 365, name: 'Shanghai' },
+  beijing: { x: 1280, y: 305, name: 'Beijing' },
+  dubai: { x: 1000, y: 405, name: 'Dubai' },
+
   // Oceania
-  sydney: { x: 1380, y: 705, name: 'Sydney' },
-  auckland: { x: 1495, y: 765, name: 'Auckland' },
-  melbourne: { x: 1340, y: 750, name: 'Melbourne' },
+  sydney: { x: 1360, y: 735, name: 'Sydney' },
+  auckland: { x: 1480, y: 795, name: 'Auckland' },
+  melbourne: { x: 1320, y: 780, name: 'Melbourne' },
 };
 
 // Generate smooth SVG path between two points using cubic bezier
