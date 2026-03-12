@@ -1,7 +1,6 @@
 # Abyssal Connect
 
 **Live:** https://abyssal-connect.vercel.app  
-**Repo:** https://github.com/ionutrobert/abyssal-connect
 
 ---
 
