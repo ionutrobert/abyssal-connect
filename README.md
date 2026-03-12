@@ -6,7 +6,7 @@
 
 A dark, immersive digital presence for a deep sea fiber optic maintenance company. Built to feel like looking into the deep ocean—mysterious, precise, and illuminated by data.
 
-This was built as a showcase project to demonstrate what's possible when you combine WebGL, thoughtful animations, and a distinctive visual identity. The company maintains submarine cable infrastructure; I built the website.
+This was built as a showcase project to demonstrate what's possible when you combine WebGL, thoughtful animations, and a distinctive visual identity.
 
 ## The Concept
 
