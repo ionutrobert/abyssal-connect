@@ -23,14 +23,6 @@ The result is a site that feels like a submarine control interface—dark theme,
 - **State:** Zustand
 - **Deployment:** Vercel Edge Network
 
-## Running Locally
-
-```bash
-cd site
-npm install
-npm run dev
-```
-
 Open [http://localhost:3000](http://localhost:3000) to view.
 
 ## What's Under the Hood
@@ -41,28 +33,6 @@ Open [http://localhost:3000](http://localhost:3000) to view.
 - **Capabilities Grid** — Technical specifications for ROV technology and depth ratings
 - **Secure Portal** — Client access mockup for monitoring fleet positions
 - **Modals** — Contact forms, career listings, security/privacy policy, incident reporting
-
-## Deployment
-
-Connected to Vercel. Every push to `main` triggers automatic deployment.
-
-```bash
-# Vercel CLI deployment (optional)
-npm i -g vercel
-vercel
-```
-
-## Project Structure
-
-```
-site/
-├── app/              # Next.js App Router pages
-├── components/       # React components
-├── data/             # Mock operational data (vessels, cables)
-├── hooks/            # Custom React hooks
-├── lib/              # Utilities
-└── public/           # Static assets (images, audio)
-```
 
 ## Notes
 
